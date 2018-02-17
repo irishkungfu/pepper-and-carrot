@@ -1,0 +1,25 @@
+body {
+    height: 100%;
+    background: url('../images/pepper_and_carrot_user_manual.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h3 {
+    font-size: 1em;
+}
+
+.card-body {
+    padding: 0em;
+}
+.caption {
+    white-space: nowrap;
+}
+.character-image {
+    width: 100%;
+}
+.header-image {
+    width: 50%;
+}
+.footer-logo {
+    width: 5%;
+}
