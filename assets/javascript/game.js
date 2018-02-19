@@ -13,7 +13,7 @@ var pepper = {
     counterAttack: 8,
     hp: 120,
     attackPower: 8,
-    incrementAttack: function () { this.attackPower++ },
+    incrementAttack: function () { this.attackPower += this.attackPower },
 }
 var thyme = {
     id: 'thyme',
@@ -100,9 +100,10 @@ $( document ).ready(function() {
             console.log('attack phase is operational');
 
             attacker.hp = attacker.hp - defender.counterAttack;
-            $(attackerHpId).text(attacker.hp);
+            $(attackerHpId).text("HP: " + attacker.hp);
             defender.hp = defender.hp - attacker.attackPower;
-            $(defenderHpId).text(defender.hp);
+            $(defenderHpId).text("HP: " + defender.hp);
+            $('#battle-status').text("You attacked " + defender.name + " for " + attacker.attackPower + " damage! " + defender.name + " responded with a counter attack, you took " + defender.counterAttack + " damage.");
 
             if (attacker.hp <= 0 ) {
                 $('#battle-status').text('you lost!')
@@ -118,6 +119,7 @@ $( document ).ready(function() {
                     $('#battle-status').text('You have have defeated all the other witches!')
                 }
             }
+            attacker.incrementAttack();
         }
     });
 });
