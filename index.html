@@ -13,121 +13,93 @@
     <header class="col-12 text-center">
         <img src="assets/images/pepper_and_carrot_header.svg" class="header-image" alt="">
     </header>
-    <div class='fixed-bottom container p-1'>
+    <div class='container p-1 characters'>
         <div class="row">
             <!-- Container for all cards -->
-            <div class="container col-md-6" id="content-wrapper">
+            <div class="container col-md-12" id="content-wrapper">
                 <!-- Container for holding area -->
-                <div class="row character-container">
-                    <div class="px-1 col-3 class=character-wrapper">
-                        <div class="card p-1">
+                <div class="row character-container" id='select-your-character_area'>
+                    <div class="px-1 col-2 character-wrapper">
+                        <div class="card p-1" id='pepper'>
                             <div class="card-body">
                                 <img src="assets/images/pepper.jpg" class='img-fluid character-image' alt="">
-                                <div class="caption">Pepper<br><small>HP - 100</small></div>
+                                <div class="caption">Pepper<br><small id='pepper_hp'>HP - 100</small></div>
                             </div> 
                         </div>
                     </div>  
-                    <div class="px-1 col-3 class=character-wrapper">
-                        <div class="card p-1">
+                    <div class="px-1 col-2 character-wrapper">
+                        <div class="card p-1" id='sage'>
                             <div class="card-body">
                                 <img src="assets/images/the_sage.jpg" class='character-image img-fluid' alt="">
-                                <div class="caption">The Sage<br><small>HP - 100</small></div>
+                                <div class="caption">The Sage<br><small id='sage_hp'>HP - 100</small></div>
                             </div> 
                         </div>
                     </div>  
-                    <div class="px-1 col-3 class=character-wrapper">
-                        <div class="card p-1">
+                    <div class="px-1 col-2 character-wrapper">
+                        <div class="card p-1" id='thyme'>
                             <div class="card-body">
                                 <img src="assets/images/thyme.jpg" class='character-image img-fluid' alt="">
-                                <div class="caption">Thyme<br><small>HP - 100</small></div>
+                                <div class="caption">Thyme<br><small id='thyme_hp'>HP - 100</small></div>
                             </div> 
                         </div>
                     </div>  
-                    <div class="px-1 col-3 class=character-wrapper">
-                        <div class="card p-1">
+                    <div class="px-1 col-2 character-wrapper">
+                        <div class="card p-1" id='cumin'>
                             <div class="card-body">
                                 <img src="assets/images/cumin.jpg" class='character-image img-fluid' alt="">
-                                <div class="caption">Cumin<br><small>HP - 100</small></div>
+                                <div class="caption">Cumin<br><small id='cumin_hp'>HP - 100</small></div>
                             </div> 
                         </div>
-                    </div>  
-                </div>
-                <!-- Container for holding area -->
-                <div class="row character-container">
-                    <div class="px-1 col-3 class=character-wrapper">
-                        <div class="card p-1">
-                            <div class="card-body">
-                                <img src="assets/images/pepper.jpg" class='img-fluid character-image' alt="">
-                                <div class="caption">Pepper<br><small>HP - 100</small></div>
-                            </div> 
-                        </div>
-                    </div>  
-                    <div class="px-1 col-3 class=character-wrapper">
-                        <div class="card p-1">
-                            <div class="card-body">
-                                <img src="assets/images/the_sage.jpg" class='character-image img-fluid' alt="">
-                                <div class="caption">The Sage<br><small>HP - 100</small></div>
-                            </div> 
-                        </div>
-                    </div>  
-                    <div class="px-1 col-3 class=character-wrapper">
-                        <div class="card p-1">
-                            <div class="card-body">
-                                <img src="assets/images/thyme.jpg" class='character-image img-fluid' alt="">
-                                <div class="caption">Thyme<br><small>HP - 100</small></div>
-                            </div> 
-                        </div>
-                    </div>  
-                    <div class="px-1 col-3 class=character-wrapper">
-                        <div class="card p-1">
-                            <div class="card-body">
-                                <img src="assets/images/cumin.jpg" class='character-image img-fluid' alt="">
-                                <div class="caption">Cumin<br><small>HP - 100</small></div>
-                            </div> 
-                        </div>
-                    </div>  
-                </div>
-                <!-- Container for holding area -->
-                <div class="row character-container">
-                        <div class="px-1 col-3 class=character-wrapper">
-                            <div class="card p-1">
-                                <div class="card-body">
-                                    <img src="assets/images/pepper.jpg" class='img-fluid character-image' alt="">
-                                    <div class="caption">Pepper<br><small>HP - 100</small></div>
-                                </div> 
-                            </div>
-                        </div>  
-                        <div class="px-1 col-3 class=character-wrapper">
-                            <div class="card p-1">
-                                <div class="card-body">
-                                    <img src="assets/images/the_sage.jpg" class='character-image img-fluid' alt="">
-                                    <div class="caption">The Sage<br><small>HP - 100</small></div>
-                                </div> 
-                            </div>
-                        </div>  
-                        <div class="px-1 col-3 class=character-wrapper">
-                            <div class="card p-1">
-                                <div class="card-body">
-                                    <img src="assets/images/thyme.jpg" class='character-image img-fluid' alt="">
-                                    <div class="caption">Thyme<br><small>HP - 100</small></div>
-                                </div> 
-                            </div>
-                        </div>  
-                        <div class="px-1 col-3 class=character-wrapper">
-                            <div class="card p-1">
-                                <div class="card-body">
-                                    <img src="assets/images/cumin.jpg" class='character-image img-fluid' alt="">
-                                    <div class="caption">Cumin<br><small>HP - 100</small></div>
-                                </div> 
-                            </div>
-                        </div>  
                     </div>
+                    <div class="px-1 col-4 character-wrapper align-self-center">
+                        <div class='explainer' id='explainer_first-row'>Please select a character</div>
+                    </div>    
+                </div>
+
+  
+                 <!-- Container for Your Character area -->
+                 <div class="row character-container" id='attacker_area'>
+                    <div class="px-1 col-2 character-wrapper">
+                        <div class="card p-1" id='attacker-card'>
+                            <div class="card-body invisible">
+                                <img src="assets/images/pepper.jpg" class='img-fluid character-image' alt="">
+                                <div class="caption">Spaceholder<br><small>HP - 100</small></div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="px-1 col-4 character-wrapper align-self-center">
+                        <div class='explainer'>Your Character </div>
+                    </div>  
+                </div>
+                <!-- Attack button -->
+                <div class="row">
+                    <div class="px-1 col-2 btn btn-primary" id='attack_button'>
+                        Attack!
+                    </div>
+                    <div class="col-4" id='battle-status'>
+                        Status Area
+                    </div>
+                </div>
+                <!-- Container for Defender area -->
+                <div class="row character-container" id='defender_area'>
+                    <div class="px-1 col-2 character-wrapper">
+                        <div class="card p-1">
+                            <div class="card-body invisible">
+                                <img src="assets/images/pepper.jpg" class='img-fluid character-image' alt="">
+                                <div class="caption">Pepper<br><small>HP - 100</small></div>
+                            </div> 
+                        </div>
+                    </div>  
+                    <div class="px-1 col-4 character-wrapper align-self-center">
+                        <div class='explainer'>Defender</div>
+                    </div> 
+                </div> 
             </div>
-            <div class="col-md-6">Hidden Div</div>
+            <!-- <div class="col-md-6 explainer-container">Hidden Div</div> -->
             <div class="col-md-12 card" id='footer'>
                 <div class="card-body footer">
-                        <img src="assets/images/footer_logo.png" alt="" class="img-fluid footer-logo">
-                        <p>This work, "Pepper and Carrot RPG", is a derivative of "<a href="https://www.peppercarrot.com/">Pepper and Carrot</a>" by <a href="https://www.davidrevoy.com/">David Revoy</a>, used under<a href="https://creativecommons.org/licenses/by/4.0/"> Creative Commons</a> by <a href="https://github.com/irishkungfu"" is licensed under CC BY by <a href="https://github.com/irishkungfu">Jared Gilpin</a>.</p>
+                        <!-- <img src="assets/images/footer_logo.png" alt="" class="img-fluid footer-logo"> -->
+                        <p>This work, "Pepper and Carrot RPG", is a derivative of "<a href="https://www.peppercarrot.com/">Pepper and Carrot</a>" by <a href="https://www.davidrevoy.com/">David Revoy</a>, used under<a href="https://creativecommons.org/licenses/by/4.0/"> Creative Commons</a> by <a href="https://github.com/irishkungfu" is licensed under CC BY by <a href="https://github.com/irishkungfu">Jared Gilpin</a>.</p>
                 </div>
             </div>
         </div>

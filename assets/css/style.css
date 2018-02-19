@@ -19,7 +19,15 @@ h3 {
 }
 .header-image {
     width: 50%;
+    height: 100%;
 }
 .footer-logo {
     width: 5%;
 }
+.character-wrapper {
+    padding: .5em;
+}
+/* .explainer-container, .character-wrapper {
+    border: 1px red solid;
+} */
+
