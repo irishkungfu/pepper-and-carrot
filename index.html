@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Star Wars Game</title>
+    <title>Pepper and Carrot - RPG</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
@@ -19,7 +19,7 @@
             <div class="container col-md-12" id="content-wrapper">
                 <!-- Container for holding area -->
                 <div class="row character-container" id='select-your-character_area'>
-                    <div class="px-1 col-2 character-wrapper">
+                    <div class="px-1 col-3 character-wrapper">
                         <div class="card p-1" id='pepper'>
                             <div class="card-body">
                                 <img src="assets/images/pepper.jpg" class='img-fluid character-image' alt="">
@@ -27,7 +27,7 @@
                             </div> 
                         </div>
                     </div>  
-                    <div class="px-1 col-2 character-wrapper">
+                    <div class="px-1 col-3 character-wrapper">
                         <div class="card p-1" id='sage'>
                             <div class="card-body">
                                 <img src="assets/images/the_sage.jpg" class='character-image img-fluid' alt="">
@@ -35,7 +35,7 @@
                             </div> 
                         </div>
                     </div>  
-                    <div class="px-1 col-2 character-wrapper">
+                    <div class="px-1 col-3 character-wrapper">
                         <div class="card p-1" id='thyme'>
                             <div class="card-body">
                                 <img src="assets/images/thyme.jpg" class='character-image img-fluid' alt="">
@@ -43,7 +43,7 @@
                             </div> 
                         </div>
                     </div>  
-                    <div class="px-1 col-2 character-wrapper">
+                    <div class="px-1 col-3 character-wrapper">
                         <div class="card p-1" id='cumin'>
                             <div class="card-body">
                                 <img src="assets/images/cumin.jpg" class='character-image img-fluid' alt="">
@@ -51,56 +51,65 @@
                             </div> 
                         </div>
                     </div>
-                    <div class="px-1 col-4 explainer-wrapper align-self-center">
+                    <!-- <div class="px-1 col-4 explainer-wrapper align-self-center">
                         <div class='explainer' id='explainer_first-row'>Please select a character</div>
-                    </div>    
+                    </div>     -->
                 </div>
+        <div class="row battle-arena">
+            <!-- Container for Your Character area -->
+            <div class="character-container col-4" id='attacker_area'>
 
-  
-                 <!-- Container for Your Character area -->
-                 <div class="row character-container" id='attacker_area'>
-                    <div class="px-1 col-2 character-wrapper">
-                        <div class="card p-1" id='attacker-card'>
-                            <div class="card-body invisible">
-                                <img src="assets/images/pepper.jpg" class='img-fluid character-image' alt="">
-                                <div class="caption">Spaceholder<br><small>HP - 100</small></div>
-                            </div> 
-                        </div>
+                <div class="px-1 character-wrapper">
+                    <div class="card p-1 battle-character">
+                        <div class="card-header text-center">
+                            <div class='explainer'>Your Character</div>
+                        </div>  
+                        <div class="card-body invisible" id='attacker_card'>
+                            <img src="assets/images/pepper.jpg" class='img-fluid character-image' alt="">
+                            <div class="caption">Spaceholder<br><small>HP - 100</small></div>
+                        </div> 
                     </div>
-                    <div class="px-1 col-4 character-wrapper align-self-center">
-                        <div class='explainer'>Your Character </div>
-                    </div>  
                 </div>
-                <!-- Attack button -->
-                <div class="row">
-                    <div class="px-1 col-2 btn btn-primary" id='attack_button'>
+            </div>
+            <!-- Attack button -->
+            <div class="col-4 status-wrapper">
+                <div class="card h-100">
+                    <div class="card-header h-50 text-center" id='attack_button'>
                         Attack!
                     </div>
-                    <div class="col-4" id='battle-status'>
+                    <div class="card-body status-wrapper h-100" id='battle-status'>
                         Status Area
                     </div>
                 </div>
-                <!-- Container for Defender area -->
-                <div class="row character-container" id='defender_area'>
-                    <div class="px-1 col-2 character-wrapper">
-                        <div class="card p-1">
-                            <div class="card-body invisible">
+            </div>
+            <!-- Container for Defender area -->
+            <div class="character-container col-4" id='defender_area'>
+
+                <div class="px-1 character-wrapper">
+                    <div class="card p-1">
+                        <div class="card-header text-center">
+                            <div class='explainer'>Defender</div>
+                        </div> 
+                        <div id="defender_container">
+                            <div class="card-body invisible" id=defender_card>
                                 <img src="assets/images/pepper.jpg" class='img-fluid character-image' alt="">
                                 <div class="caption">Pepper<br><small>HP - 100</small></div>
                             </div> 
-                        </div>
-                    </div>  
-                    <div class="px-1 col-4 character-wrapper align-self-center">
-                        <div class='explainer'>Defender</div>
-                    </div> 
-                </div> 
+                        </div>  
+                    </div>
+                </div>  
+            </div> 
             </div>
+        </div>        
+  
+                
             <!-- <div class="col-md-6 explainer-container">Hidden Div</div> -->
-            <div class="col-md-12 card" id='footer'>
-                <div class="card-body footer">
-                        <!-- <img src="assets/images/footer_logo.png" alt="" class="img-fluid footer-logo"> -->
-                        <p>This work, "Pepper and Carrot RPG", is a derivative of "<a href="https://www.peppercarrot.com/">Pepper and Carrot</a>" by <a href="https://www.davidrevoy.com/">David Revoy</a>, used under<a href="https://creativecommons.org/licenses/by/4.0/"> Creative Commons</a> by <a href="https://github.com/irishkungfu" is licensed under CC BY by <a href="https://github.com/irishkungfu">Jared Gilpin</a>.</p>
-                </div>
+
+        </div>
+        <div class="col-md-12 card footer" id='footer'>
+            <div class="card-body">
+                    <!-- <img src="assets/images/footer_logo.png" alt="" class="img-fluid footer-logo"> -->
+                    <p>This work, "Pepper and Carrot RPG", is a derivative of "<a href="https://www.peppercarrot.com/">Pepper and Carrot</a>" by <a href="https://www.davidrevoy.com/">David Revoy</a>, used under<a href="https://creativecommons.org/licenses/by/4.0/"> Creative Commons</a> by <a href="https://github.com/irishkungfu" is licensed under CC BY by <a href="https://github.com/irishkungfu">Jared Gilpin</a>.</p>
             </div>
         </div>
     </div>

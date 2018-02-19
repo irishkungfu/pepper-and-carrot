@@ -62,7 +62,7 @@ $( document ).ready(function() {
             var getHtml = $(this).children().html();
             console.log(getHtml)
 
-            $('#attacker_area').children().children().children().replaceWith(getHtml);
+            $('#attacker_card').replaceWith(getHtml);
             $(this).parent().prop('id', 'select-defender_area')
             phase = 'select_defender';
 
@@ -75,15 +75,20 @@ $( document ).ready(function() {
             
         } 
         else if (area === 'select-defender_area' && phase === 'select_defender') {
+            $('#defender_container').children().prop('id', 'defender_card');
             var getHtml = $(this).children().html();
 
-            $('#defender_area').children().children().children().replaceWith(getHtml);
+            $('#defender_card').replaceWith(getHtml);
             $(this).parent().prop('id', 'select-defender_area')
+
 
             characterCount--;
 
             if (characterCount === 0) {
-                $(this).parent().hide(1000);
+                // $(this).parent().hide(1000);
+
+                var placeholder = '<div class="px-1 col-3 character-wrapper invisible"><div class="card p-1"><div class="card-body"><img src="assets/images/pepper.jpg" class="img-fluid character-image" alt=""><div class="caption">Pepper<br><small">HP - 100</small></div></div></div></div>';
+                $(this).parent().replaceWith(placeholder);
             }
             phase = 'attack';
             defender = eval(character);

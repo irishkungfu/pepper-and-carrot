@@ -1,8 +1,15 @@
+@font-face {
+	font-family: 'ComicSpice';
+	src: url('../fonts/ComicSpice.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 body {
     height: 100%;
     background: url('../images/pepper_and_carrot_user_manual.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'ComicSpice';
 }
 h3 {
     font-size: 1em;
@@ -24,10 +31,29 @@ h3 {
 .footer-logo {
     width: 5%;
 }
-.character-wrapper {
+.character-wrapper, .status-wrapper {
     padding: .5em;
 }
-/* .explainer-container, .character-wrapper {
+/* div {
     border: 1px red solid;
 } */
-
+.card-header {
+    font-size: 1.2rem;
+}
+.card {
+    background: rgba(255, 255, 255, .6);
+    box-shadow: 2px 4px 2px #888888;
+}
+#battle-status {
+    max-height: 100%;
+}
+.characters {
+    min-height: calc(100vh - 153px); 
+    
+}
+#attack_button {
+    cursor: pointer;
+}
+.footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
