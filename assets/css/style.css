@@ -1,59 +1,63 @@
 @font-face {
-	font-family: 'ComicSpice';
-	src: url('../fonts/ComicSpice.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "ComicSpice";
+  src: url("../fonts/ComicSpice.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 body {
-    height: 100%;
-    background: url('../images/pepper_and_carrot_user_manual.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'ComicSpice';
+  height: 100%;
+  background: url("../images/pepper_and_carrot_user_manual.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "ComicSpice";
 }
 h3 {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 .card-body {
-    padding: 0em;
+  padding: 0em;
 }
 .caption {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 .character-image {
-    width: 100%;
+  width: 100%;
 }
 .header-image {
-    width: 50%;
-    height: 100%;
+  width: 30%;
 }
 .footer-logo {
-    width: 5%;
+  width: 5%;
 }
-.character-wrapper, .status-wrapper {
-    padding: .5em;
+.character-wrapper,
+.status-wrapper {
+  padding: 0.5em;
 }
 /* div {
     border: 1px red solid;
 } */
 .card-header {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 .card {
-    background: rgba(255, 255, 255, .6);
-    box-shadow: 2px 4px 2px #888888;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 2px 4px 2px #888888;
 }
 #battle-status {
-    max-height: 100%;
+  max-height: 100%;
 }
-.characters {
-    min-height: calc(100vh - 153px); 
-    
-}
+/* .characters {
+  min-height: calc(100vh - 153px);
+} */
 #attack_button {
-    cursor: pointer;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(0, 140, 255);
+  font-size: 1.5rem;
 }
 .footer {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
