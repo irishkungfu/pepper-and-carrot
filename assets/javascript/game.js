@@ -18,11 +18,11 @@ var pepper = {
 var thyme = {
   id: "thyme",
   name: "Thyme",
-  counterAttack: 8,
-  hp: 100,
-  attackPower: 100,
+  counterAttack: 5,
+  hp: 150,
+  attackPower: 5,
   incrementAttack: function() {
-    this.attackPower++;
+    this.attackPower += this.attackPower;
   }
 };
 
@@ -30,20 +30,20 @@ var sage = {
   id: "sage",
   name: "The Sage",
   counterAttack: 8,
-  hp: 150,
-  attackPower: 20,
+  hp: 100,
+  attackPower: 13,
   incrementAttack: function() {
-    this.attackPower++;
+    this.attackPower += this.attackPower;
   }
 };
 var cumin = {
   id: "cumin",
   name: "Cumin",
   counterAttack: 8,
-  hp: 150,
+  hp: 80,
   attackPower: 20,
   incrementAttack: function() {
-    this.attackPower++;
+    this.attackPower += this.attackPower;
   }
 };
 $(function() {
